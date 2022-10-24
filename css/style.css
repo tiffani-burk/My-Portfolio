@@ -338,6 +338,9 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 800px) {
@@ -393,6 +396,10 @@ header {
         position: relative;
         z-index: 2;
     }
+}
+
+.service-image {
+    margin: 1rem;
 }
 
 /* My Work */
