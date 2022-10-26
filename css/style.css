@@ -435,7 +435,7 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img .item .item-container {
     transform: scale(1.2);
-    opacity: .5;
+    opacity: .2;
 }
 
 
@@ -502,4 +502,28 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Project 1 */
+.proj-header {
+   background-color: rgb(61, 61, 61);
+   width: 100%;
+   color: white; 
+   padding: 2rem;
+   text-align: center;
+}
+
+.role-container {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.mock-container{
+    background-color: pink;
+    display: flex;
+}
+
+.mockup1 {
+    width: 50%;
 }
