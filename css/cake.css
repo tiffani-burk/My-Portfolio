@@ -307,3 +307,27 @@ header {
 }
 
 /* Project */
+
+.intro-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 2rem;
+}
+
+.intro-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overview {
+    width: 100%;
+    padding: 1rem;
+}
+
+.main-container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

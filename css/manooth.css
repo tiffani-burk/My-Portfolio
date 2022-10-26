@@ -307,3 +307,8 @@ header {
 }
 
 /* Project */
+.project-det {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
