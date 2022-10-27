@@ -307,3 +307,15 @@ header {
 }
 
 /* Project */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-grid {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}

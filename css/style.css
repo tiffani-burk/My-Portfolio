@@ -504,26 +504,3 @@ header {
     padding: .5em;
 }
 
-/* Project 1 */
-.proj-header {
-   background-color: rgb(61, 61, 61);
-   width: 100%;
-   color: white; 
-   padding: 2rem;
-   text-align: center;
-}
-
-.role-container {
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-}
-
-.mock-container{
-    background-color: pink;
-    display: flex;
-}
-
-.mockup1 {
-    width: 50%;
-}
