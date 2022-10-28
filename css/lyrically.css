@@ -7,8 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Fira Code', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -322,18 +322,32 @@ header {
      flex-direction: column;
  }
  
+ .intro2 {
+    background-color: var(--clr-purple);
+ }
+
  .mock-container{
-     display: grid;
-     grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    display: flex;
+     /* display: grid;
+     grid-template-columns: repeat(autofit, minmax(300px, 1fr)); */
+     color: white;
  }
  
 
+.mockup1 {
+    width: 50%;
+}
 
  section {
     display: flex;
     flex-direction: column;
     align-items: center;
  }
+
+.design-proc {
+    border: 1px solid var(--clr-dark);
+    border-radius: 8px;
+}
 
  .research-grid {
     display: grid;
@@ -354,14 +368,10 @@ header {
     grid-template-columns: repeat(2, 1fr);
  }
 
+
+
  h2 {
-    color: rgb(248, 247, 247);
-    box-shadow: 10px 10px 10px;
     margin: 1rem;
-    padding: 1rem;
-    background-color: grey;
+    text-align: center;
  }
 
- h3 {
-    margin: 1rem;
- }

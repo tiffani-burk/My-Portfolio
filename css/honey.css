@@ -7,8 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Fira Code', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
