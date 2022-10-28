@@ -16,6 +16,11 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-olive: #9bc1bc;
+    --clr-purple: #5d576b;
+    --clr-offwhite: #e6ebe0;
+    --clr-orange: #ed6a5a;
+    --clr-yellow:#f4f1bb;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,7 +48,7 @@ html {
 }
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-olive);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -65,7 +70,7 @@ strong {
 }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-orange);
     outline-offset: 3px;
 }
 
@@ -74,7 +79,7 @@ strong {
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
+    background: var(--clr-orange);
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
@@ -130,14 +135,15 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-purple);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: white;
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
+    color: var(--clr-yellow);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
@@ -187,7 +193,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-orange);
 }
 
 .nav-toggle {
@@ -234,7 +240,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-orange);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -317,7 +323,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     position: relative;
 }
 
@@ -463,7 +469,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-yellow);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
