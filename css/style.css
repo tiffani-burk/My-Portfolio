@@ -7,8 +7,9 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Fira Code', monospace;
+ 
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -88,6 +89,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border-radius: 8px;
 }
 
 .btn:hover {
@@ -143,7 +145,7 @@ h3 {
 }
 
 .section__subtitle--work {
-    color: var(--clr-yellow);
+    color: var(--clr-orange);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
