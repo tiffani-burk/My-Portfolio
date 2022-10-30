@@ -57,7 +57,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 2em 2em;
 }
 
 img {
@@ -115,6 +115,9 @@ h3 {
     font-size: var(--fs-h3)
 }
 
+.process-header {
+color: rgb(146, 146, 146);
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -346,6 +349,7 @@ header {
 
 .design-proc {
     border: 1px solid var(--clr-dark);
+    background-color: var(--clr-dark);
     border-radius: 8px;
 }
 
@@ -375,3 +379,22 @@ header {
     text-align: center;
  }
 
+ .discover-section {
+    background-color: var(--clr-purple);
+    color: white;
+ }
+
+ .discover-section3 {
+    background-color: var(--clr-purple);
+    color: white;
+ }
+
+ .define-section2 {
+    background-color: var(--clr-purple);
+    color: white;
+ }
+
+ .deploy-section {
+    background-color: var(--clr-purple);
+    color: white;
+ }
