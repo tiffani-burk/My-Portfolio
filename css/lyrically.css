@@ -116,7 +116,11 @@ h3 {
 }
 
 .process-header {
-color: rgb(146, 146, 146);
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    color: var(--clr-yellow)
 }
 
 .section__title {
@@ -323,22 +327,37 @@ header {
  .role-container {
      display: flex;
      flex-direction: column;
- }
- 
- .intro2 {
-    background-color: var(--clr-purple);
- }
+     max-width: min-content;
 
- .mock-container{
-    display: flex;
-     /* display: grid;
-     grid-template-columns: repeat(autofit, minmax(300px, 1fr)); */
-     color: white;
  }
  
 
-.mockup1 {
-    width: 50%;
+
+
+ @media (min-width: 600px) {
+    .intro-container {
+        display: grid;
+        width: min-content;
+        margin: 1rem;
+        grid-column-gap: 1rem;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+        
+    }
+
+    .intro2-section {
+        position: relative; 
+        background-color: var(--clr-purple);
+        color: #fff;
+    }
+ 
+
+.mockup1-img {
+    grid-area: img;
+    min-width: 600px;
+    position: relative;
 }
 
  section {
@@ -397,4 +416,33 @@ header {
  .deploy-section {
     background-color: var(--clr-purple);
     color: white;
+ }
+
+
+ @media (min-width: 600px) {
+    .deploy-container {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+.deploy-img {
+    grid-area: img;
+    min-width: 600px;
+    position: relative;
+ 
+}
+
+ .deploy-section {
+    position: relative;
+ }
+
+ .deploy-descript {
+    align-self: start;
+    max-width: fit-content;
  }
