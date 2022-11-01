@@ -18,41 +18,50 @@
         rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rhino-splits.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/devjane.png" alt="">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
+     <!-- Header -->
+     <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+              <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+              <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+          </ul>
+      </nav>
+
+      <div class="proj-header">
+          <h1 class="section__title section__title--intro">
+              <strong>Rhino Splits</strong>
+          </h1>
+          <h4>Mobile Application</h4>
+          <p class="section__subtitle section__subtitle--intro">UX / UI Design </p>
+          <!-- <img src="#" alt="" class="intro__img"> -->
+      </div>
+  </header>
+
+<!-- Project -->
 
 
   <!--Overview -->
   <section class="overview">
-    <h1>Rhino Splits</h1>
+  
     <div class="content-wrapper">
       <!--Left Container-->
       <!--My Role-->
       <div id=role class="container p-3 my-3 border">
-        <h3>My Role</h3>
+        <h2>My Role</h2>
         <p> My role was to do the user research and design of this mobile app.
         </p>
 
-        <h3>Solution</h3>
+        <h2>Solution</h2>
         <p>
           My approach was to create a simplistic application that does one thing… really well. Sends and receives money.
           It didn’t need a ton of bells and whistles, so my goal was to keep it straight and to the point.
@@ -61,14 +70,12 @@
       <!--Right Container-->
       <div class="right-container" id="overview-container">
 
-        <h2 style="display: flex; justify-content: flex-start;">
-          <h3>Overview</h3>
-          <br>
-          <p style="font-size: 20px; font-family: font-family: 'Poppins', sans-serif;"> Rhino Splits is a fictitious
+        <h2>
+          <h2>Overview</h2>
+          <p> Rhino Splits is a fictitious
             peer-to-peer money transfer app, where real data was collected, research was conducted and real people were
             interviewed.
           </p>
-          <br>
           <p>
             While at Nashville Software School, I was tasked with creating a mobile app that would make it easy for
             young adults to do peer-to-peer financial transfers.
@@ -77,7 +84,7 @@
         </h2>
         <div class="button-section">
           <a href="https://www.figma.com/file/ZMuA8hybpuXbB9AWSoEygZ/Rhino-Splits-2?node-id=0%3A1"><button
-              class="p-button"> <b> View Prototype</b> </button></a>
+              class="btn"> <b> View Prototype</b> </button></a>
         </div>
       </div>
     </div>
@@ -90,7 +97,7 @@
   <!--Design Process-->
   <section>
     <div id="design-process">
-      <h2 style="font-size: 24px;">Design Process</h2>
+      <h2>Design Process</h2>
       <br>
       <p>1. Discover &nbsp
         2. Define &nbsp
@@ -99,7 +106,7 @@
         4. Deploy
       </p>
       <br>
-      <h2 style="font-size: 24px;">
+      <h2>
         Design Tools
       </h2>
 
@@ -131,21 +138,21 @@
   </section>
 
 <!-- Discover Phase -->
-  <h1>Discover</h1>
+  <h2>Discover</h2>
   <div class="line"></div>
 
   <section>
     <!--Prob Statment-->
     <div id="problem">
-      <h3>Problem Statement</h3>
-      <p style="margin: 1rem;"> How might we... provide a peer-to-peer payment method for young, social people that
+      <h2>Problem Statement</h2>
+      <p> How might we... provide a peer-to-peer payment method for young, social people that
         remains convenient, quick, private and has little, to no, learning curve. </p>
     </div>
   </section>
 
   <section>
     <!--Research-->
-    <h3>Research Plan</h3>
+    <h2>Research Plan</h2>
     <div id="research-div">
       <div class="container p-3 my-3 border" id="research-left">
         <h3>Activities and Interactions</h3>
@@ -194,9 +201,9 @@
   <br>
 
   <!--Comp Anylsisis -->
-  <section id="section" style="background-color: #9bc1bc;">
-    <div class="UI">
-      <h3>Competitive Anylisis</h3>
+  <section>
+    <div>
+      <h2>Competitive Anylisis</h2>
       <br>
       <p>
         Since there was already an existing field of "digital wallets" on the market, I was able to analyze existing
@@ -209,7 +216,7 @@
 
     <div>
 
-      <img src="images/Rhino-spit- Competitors.jpg" style="width: 300px;" alt="graphic designer on computer">
+      <img src="images/Rhino-spit- Competitors.jpg" alt="graphic designer on computer">
 
     </div>
 
@@ -218,21 +225,20 @@
 
   <!--Interview Users-->
   <section>
-    <h3>User Interviews</h3>
+    <h2>User Interviews</h2>
     <br>
     <div id="user-meet">
       <p>Let's meet the users...</p>
     </div>
     <div id="interviewee-notes">
-      <img src="images/Interviewees.png" style="width: 600px;" alt="">
+      <img src="images/Interviewees.png"  alt="">
     </div>
   </section>
 
   <!--Interviews-->
   <section id="section" class="interview">
     <div>
-      <h3>User Interviews</h3>
-      <br>
+      <h2>User Interviews</h2>
 
       <p>
         The user interviews may be my favorite part of the research process! I started my interviews with a friendly
@@ -249,7 +255,7 @@
 
     <!--Interview Gif-->
     <div>
-      <img class="design-gif" src="images/Interview.gif" alt="graphic designer on computer" style="width: 400px;">
+      <img class="design-gif" src="images/Interview.gif" alt="graphic designer on computer">
     </div>
   </section>
 
@@ -260,9 +266,9 @@
 
 
     <div id="affinity">
-      <h3>Research Synthesis</h3>
+      <h2>Research Synthesis</h2>
 
-      <img src="images/Affinity Map Rhino Splits.png" style="width: 100%;" alt="Laptop with a website loaded">
+      <img src="images/Affinity Map Rhino Splits.png"  alt="Laptop with a website loaded">
     </div>
 
     <br>
@@ -271,7 +277,7 @@
     <div class="content-wrapper-one">
       <!--Insights Div Left-->
       <div class="div-left">
-        <h3>Insights</h3>
+        <h2>Insights</h2>
         <p style="text-align:justify; margin-top: 4px;">
           While there were quite a few emerging themes amongst the interviewees, there were three key insights I
           discovered. 1. The user is very private about their money 2. The user does not like wasting time and 3. The
@@ -282,7 +288,7 @@
       </div>
       <!--Isights div Right -->
       <div class="card-one-left">
-        <img src="images/Insights .png" style="width: 500px;" alt="Laptop with a website loaded">
+        <img src="images/Insights .png" alt="Laptop with a website loaded">
 
       </div>
 
@@ -293,9 +299,9 @@
   <section>
     <!--Persona-->
 
-    <H3>Defining Our User</H3>
+    <h2>Defining Our User</h2>
     <Div id="persona">
-      <img src="images/persona.png" class="img-fluid" style="width: 900px;" alt="...">
+      <img src="images/persona.png" class="img-fluid" alt="...">
     </Div>
     <div id="user-persona-comment">
       <p>
@@ -305,14 +311,11 @@
     </div>
   </section>
 
-  <br>
-  <br>
-
   <section>
     <!--Journey Map-->
-    <h3>Journey Mapping </h3>
+    <h2>Journey Mapping </h2>
     <div id="journey-map">
-      <img src="images/Journey Map.pdf" class="img-fluid" alt="" style="width: 1000px;">
+      <img src="images/Journey Map.pdf" class="img-fluid" alt="">
       <div id="user-persona-comment">
         <p>
           The journey map above is based on scenarios and stories that the user's shared in their interviews.
@@ -322,22 +325,17 @@
 
   </section>
 
-
-
-
-  <br>
-
   <section>
     <!-- Client Goals-->
     <div class="content-wrapper-border" id="goals">
       <!--Card Two-->
       <div class="card-one-left">
-        <img src="images/client-goals.gif" style="width: 400px;" alt="Laptop with a website loaded">
+        <img src="images/client-goals.gif" alt="Laptop with a website loaded">
       </div>
       <div class="box-border">
-        <h3>Client Goals and Contraints</h3>
+        <h2>Client Goals and Contraints</h2>
 
-        <p style="text-align:justify; margin-top: 4px;">
+        <p>
           When asking the client what would define success for her, she said that would be when the app was so
           successful that "Rhino Splits" would be used interchangably as a verb. While coming out with this app later in
           the game, the success would not be coming from some of the eary adopters that jumped on the Venmo bandwagon,
@@ -348,17 +346,16 @@
 
     </div>
   </section>
-  <br>
 
   <!--Define Phasae-->
-  <h1>Define</h1>
+  <h2>Define</h2>
   <div class="line"></div>
   <section id="site-map">
 
     <!-- Site Mapping -->
-    <h3>Site Mapping</h3>
-    <img src="images/Site Map.png" style="width: 150vh;" alt="">
-    <p style="margin: 1rem;">
+    <h2>Site Mapping</h2>
+    <img src="images/Site Map.png" alt="">
+    <p>
       I ran sorting tests with eight users to come up with the site map above, based on the user's understanding of the
       categories.
     </p>
@@ -368,49 +365,47 @@
 
   <!--Sketches-->
   <Section>
-    <h1>Design</h1>
+    <h2>Design</h2>
     <div class="line"></div>
     <h3>App Sketches</h3>
     <div id="sketch">
-      <img src="images/Sketches-1.jpg" class="img-fluid" alt="" style="width: 400px;">
+      <img src="images/Sketches-1.jpg" class="img-fluid" alt="">
+
       <br>
-      <br>
-      <img src="images/Sketches-2.jpg" class="img-fluid" alt="" style="width: 400px;">
+   
+      <img src="images/Sketches-2.jpg" class="img-fluid" alt="">
     </div>
   </Section>
 
 
   <!--Comment on sketches-->
-  <div class="comment-box">
+<section>
     <p>
       After interviewing the users, my findings showed that the users wanted a more simplistic version of the
       competitor's apps. My sketches portray an app where you can send and receive money, check your transactions and
       create a budget, without having to comment or have your finaces displayed on a public feed.
     </p>
-  </div>
+  </section>
 
-  <br>
+
 
   <section>
     <!--Wireframing-->
-    <h3>Wireframes</h3>
+    <h2>Wireframes</h2>
     <div id="wireframe">
-      <img src="images/wireframes.jpg" style="width: 800px;" class="img-fluid" alt="">
+      <img src="images/wireframes.jpg" class="img-fluid" alt="">
     </div>
   </section>
 
-  <br>
-
   <section id="style-guide">
-    <h3>Style Guide</h3>
-    <img src="images/style-guide (dragged).pdf" width="450px" alt="">
+    <h2>Style Guide</h2>
+    <img src="images/Style-Guide1.jpg">
   </section>
-  <br>
 
   <section>
     <!--Mock Ups and Hi-Fi Prototyple-->
-    <div class="container p-3 my-3 border">
-      <h3>Mock Ups & Hi-Fidelity Prototype</h3>
+    <div>
+      <h2>Mock Ups & Hi-Fidelity Prototype</h2>
       <p>
         After doing in-depth interviews with the users, I found that the best way to do that would be to get rid of all
         the "extras" that they were dealing with with other similar apps.
@@ -419,7 +414,7 @@
 
       </p>
       <div id="mockups">
-        <img src="images/Rhino-Split-recording.mov" style="width: 250px;" alt="">
+        <img src="images/Rhino-Split-recording.mov" alt="">
 
       </div>
 
@@ -430,9 +425,9 @@
     <!-- Lessons Learned-->
     <div id="lessons-learned">
 
-      <h3 style="margin-bottom: 2rem;">Lessons Learned</h3>
+      <h2>Lessons Learned</h2>
 
-      <p style="text-align:justify; margin-top: 4px;">
+      <p>
         I ran two batches of user's tests. The first test was with hi-fi prototype. One key lesson I learned was to give
         the user's a scenerio-based task to complete and to explain that task before they have the phone in their hands.
         When waiting too long to explain the task, the user's would start exploring the app before understanding their
