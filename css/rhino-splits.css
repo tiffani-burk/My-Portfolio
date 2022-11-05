@@ -74,11 +74,19 @@ strong {
     outline-offset: 3px;
 }
 
+
+.proj-header {
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
 /* Buttons */
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: 1em 1em;
     background: var(--clr-orange);
     color: black;
     text-decoration: none;
@@ -88,6 +96,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border-radius: 8px;
 }
 
 .btn:hover {
@@ -163,6 +172,8 @@ header {
     padding: 1em;
     background-color: var(--clr-purple);
     color: white;
+    text-align: center;
+    align-items: center;
 }
 
 .logo {
@@ -274,6 +285,27 @@ header {
 }
 
 
+/* Project */
+.btn-section {
+    text-align: center;
+}
+
+.stack-container {
+    display: flex;
+    justify-content: center;
+}
+
+.design-stack {
+    margin: .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interview-container {
+    text-align: center;
+}
 
 
 /* footer */
@@ -320,3 +352,4 @@ header {
 .social-list__link {
     padding: .5em;
 }
+

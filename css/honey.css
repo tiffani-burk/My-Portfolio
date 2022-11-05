@@ -15,7 +15,12 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #000000;
+    --clr-olive: #9bc1bc;
+    --clr-purple: #5d576b;
+    --clr-offwhite: #e6ebe0;
+    --clr-orange: #ed6a5a;
+    --clr-yellow: #f4f1bb;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,7 +48,7 @@ html {
 }
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-olive);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -52,7 +57,10 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
@@ -65,7 +73,7 @@ strong {
 }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-orange);
     outline-offset: 3px;
 }
 
@@ -74,8 +82,8 @@ strong {
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    background: var(--clr-orange);
+    color: black;
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -84,6 +92,7 @@ strong {
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
 }
+
 
 .btn:hover {
     transform: scale(1.1);
@@ -103,13 +112,24 @@ h1 {
 }
 
 h2 {
-    font-size: var(--fs-h2)
+    font-size: var(--fs-h2);
+    text-align: center;
+    margin: 1rem;
+
 }
 
 h3 {
     font-size: var(--fs-h3)
 }
 
+.process-header {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    color: var(--clr-yellow);
+    text-align: center;
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -134,13 +154,9 @@ h3 {
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: #fc0;
 }
 
-.section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
-}
 
 /* header */
 
@@ -148,6 +164,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    background-color: var(--clr-purple);
+    color: white;
+    text-align: center;
 }
 
 .logo {
@@ -187,7 +206,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-orange);
 }
 
 .nav-toggle {
@@ -234,7 +253,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-orange);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -259,6 +278,12 @@ header {
 }
 
 
+.proj-header {
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
 
 
 /* footer */
