@@ -58,7 +58,18 @@ body {
 
 section {
     padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+@media (min-width: 1000px) {
+    section {
+        padding: 2em 2em;
+    }
+}
+
 
 img {
     display: block;
@@ -286,13 +297,82 @@ header {
 
 
 /* Project */
+
+.intro-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.design-section,
+.tool-section,
+.comp-section,
+.research-section,
+.insights-section,
+.journey-section,
+.sketches-section,
+.wireframe-section,
+.lessons-section
+{
+    background-color: var(--clr-purple);
+    color: #fff;
+}
+
+
 .btn-section {
     text-align: center;
 }
 
 .stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    background-color: green;
+}
+
+.designTools-section {
+    background-color: var(--clr-offwhite);
+    color: #000000;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+@media (min-width: 600px) {
+    .designTools-section {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.research-div {
+    background-color: var(--clr-offwhite);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.research-item {
+    border: solid black 2px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-item h3 {
+    text-align: center;
+}
+
+.list {
+    width: 50%;
+}
+
+.tool-section {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .design-stack {
@@ -305,6 +385,103 @@ header {
 
 .interview-container {
     text-align: center;
+}
+
+.design-process-grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:600px) {
+    .comp-img {
+        width: 50%;
+    }
+}
+
+.goal-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.sketches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+}
+
+
+
+@media (min-width:600px) {
+    .style-guide-img {
+        width: 25%;
+    }
+}
+
+.style-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interview-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+
+}
+
+.insight-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 600px) {
+
+    .siteMap-img,
+    .userFlow-img {
+        width: 75%;
+    }
+}
+
+.site-map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rhinoVid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width:600px) {
+    .videoForRhino {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.img-mockups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
 }
 
 
@@ -352,4 +529,3 @@ header {
 .social-list__link {
     padding: .5em;
 }
-
