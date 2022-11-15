@@ -362,9 +362,19 @@ header {
         }
     }
 
+
+    @media (min-width: 600px) {
+        .manoothVidWeb {
+            width: 75%;
+            outline: none;
+        }
+    }
+
 video {
     width: 100%;
     height: auto;
 }
+
+
 
 
