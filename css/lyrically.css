@@ -341,15 +341,21 @@ header {
         display: flex;
         width: min-content;
         margin: 1rem;
-        grid-column-gap: 1rem;
+        grid-column-gap: 0rem;
         grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content;
         align-items: center;
-
-
     }
+
+    @media (min-width:600px) {
+        .role-container {
+            padding: 2rem;
+            margin: 1rem;
+        }
+    }
+
 
     .intro2-section {
         position: relative;
