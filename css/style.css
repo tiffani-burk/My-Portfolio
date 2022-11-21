@@ -90,6 +90,7 @@ strong {
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     border-radius: 8px;
+    border: none;
 }
 
 .btn:hover {
@@ -427,6 +428,7 @@ header {
     overflow: hidden;
     position: relative;
     outline: none;
+
 }
 
 
@@ -443,11 +445,12 @@ header {
 }
 
 
-
+/* 
 .portfolio__item:focus .item-text {
-    position: absolute;
-    z-index: 2;
-}
+    position: absolute; 
+   z-index: 2;
+} */
+
 
 
 .item-text {
@@ -459,13 +462,16 @@ header {
     visibility: hidden;
 }
 
+@media (max-width:600px) {
+    .item-text {
+        visibility: hidden;
+    }
+}
+
 .portfolio__item:hover .item-text {
     visibility: visible;
 }
 
-.item-container:hover .item-text {
-    visibility: visible;
-}
 
 .portfolio__item h3 {
     color: var(--clr-light);

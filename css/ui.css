@@ -88,6 +88,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border: none;
 }
 
 .btn:hover {
@@ -358,3 +359,16 @@ header {
     .main-container {
         text-align: center;
     }
+
+    @media (min-width: 600px) {
+        .logo-img {
+            width: 50%;
+        }
+    }
+
+    /* Responsive for extra large screen */
+@media (min-width: 1281px) {
+    section {
+        padding: 2rem 24rem;
+    }
+}

@@ -108,6 +108,7 @@ strong {
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     border-radius: 8px;
+    border: none;
 }
 
 .btn:hover {
@@ -258,11 +259,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -326,7 +322,6 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
-    background-color: green;
 }
 
 .designTools-section {
@@ -337,14 +332,6 @@ header {
     position: relative;
 }
 
-
-
-@media (min-width: 600px) {
-    .designTools-section {
-        width: 50%;
-        height: auto;
-    }
-}
 
 .research-div {
     background-color: var(--clr-offwhite);
@@ -398,11 +385,6 @@ header {
     align-items: center;
 }
 
-@media (min-width:600px) {
-    .comp-img {
-        width: 50%;
-    }
-}
 
 .goal-container {
     display: grid;
@@ -411,19 +393,6 @@ header {
     align-items: center;
 }
 
-.sketches {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
-}
-
-
-
-@media (min-width:600px) {
-    .style-guide-img {
-        width: 25%;
-    }
-}
 
 .style-guide {
     display: flex;
@@ -444,13 +413,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-@media (min-width: 600px) {
-
-    .siteMap-img,
-    .userFlow-img {
-        width: 75%;
-    }
-}
 
 .site-map-section {
     display: flex;
@@ -470,12 +432,7 @@ video {
     height: auto;
 }
 
-@media (min-width:600px) {
-    .videoForRhino {
-        width: 80%;
-        height: auto;
-    }
-}
+
 
 .img-mockups {
     display: grid;
@@ -528,4 +485,62 @@ video {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Media Queries */
+
+/* Responsive for extra large screen */
+@media (min-width: 1281px) {
+    section {
+        padding: 2rem 24rem;
+    }
+}
+
+/* Responsive for Table */
+@media (min-width:748px) and (max-width:1000px) {
+   .sketches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .sketch-img {
+    width: 75%;
+   }
+   .style-guide-img {
+    width: 40%;
+   }
+   .videoForRhino {
+    width: 80%;
+    height: auto;
+}
+}
+
+/* Query for laptop and monitor */
+@media (min-width:1000px) {
+    .videoForRhino {
+        width: 80%;
+        height: auto;
+    }
+    .siteMap-img,
+    .userFlow-img {
+        width: 75%;
+    }
+    .designTools-section {
+        width: 50%;
+        height: auto;
+    }
+    .comp-img {
+        width: 50%;
+    }
+    .style-guide-img {
+        width: 25%;
+    }
+    .sketches {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sketch-img {
+        width: 45%;
+    }
+    
 }

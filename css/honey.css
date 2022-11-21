@@ -91,6 +91,7 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    border: none;
 }
 
 
@@ -290,7 +291,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-yellow);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -342,7 +343,7 @@ h3 {
 }
 
 img {
-    width: 75%;
+    width: 100%;
     height: auto;
     margin: 1rem;
 }
@@ -355,4 +356,18 @@ img {
 
 video {
     margin: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    img, video {
+        width: 70%;
+    }
+}
+
+/* Responsive for extra large screen */
+@media (min-width: 1281px) {
+    section {
+        padding: 2rem 24rem;
+    }
 }
