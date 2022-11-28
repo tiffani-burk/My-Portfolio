@@ -9,7 +9,7 @@
 :root {
     --ff-primary: 'Open Sans', sans-serif;
     --ff-secondary: 'Fira Code', monospace;
- 
+
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -21,7 +21,7 @@
     --clr-purple: #5d576b;
     --clr-offwhite: #e6ebe0;
     --clr-orange: #ed6a5a;
-    --clr-yellow:#f4f1bb;
+    --clr-yellow: #f4f1bb;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -74,6 +74,8 @@ strong {
     outline: 3px solid var(--clr-orange);
     outline-offset: 3px;
 }
+
+
 
 /* Buttons */
 
@@ -434,14 +436,14 @@ header {
 
 .portfolio__item:hover .portfolio__img {
     transition:
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
     transform: scale(1.2);
     opacity: .15;
 }
 
 .portfolio__item:hover {
-    background-color:black
+    background-color: black
 }
 
 
@@ -490,9 +492,11 @@ header {
     background: #111;
     color: var(--clr-yellow);
     text-align: center;
-    padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4rem;
 }
 
 .footer a {
@@ -502,6 +506,7 @@ header {
 
 .footer__link {
     font-weight: var(--fw-bold);
+    outline: none;
 }
 
 .footer__link:hover,
@@ -517,15 +522,33 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
 }
 
 .social-list__item {
     margin: 0 .5em;
+
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: 0 .5em;
 }
 
+.copyright {
+    font-size: smaller;
+}
+
+.footer .copyright {
+
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 1rem;
+   padding-top: 2rem;
+}
+
+@media (max-width:800px) {
+    .footer .copyright {
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+}
