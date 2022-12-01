@@ -96,6 +96,7 @@ strong {
 .btn:hover {
     transform: scale(1.1);
 }
+
 /* Typography */
 
 h1,
@@ -192,6 +193,7 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .nav__link {
@@ -203,6 +205,10 @@ header {
 
 .nav__link:hover {
     color: var(--clr-orange);
+}
+
+.nav-toggle:focus {
+    outline: 3px solid var(--clr-orange);
 }
 
 .nav-toggle {
@@ -324,10 +330,10 @@ header {
 
 .footer .copyright {
 
-   display: flex;
-   justify-content: flex-end;
-   margin-right: 1rem;
-   padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    padding-top: 2rem;
 }
 
 @media (max-width:800px) {
@@ -335,7 +341,7 @@ header {
         margin-right: 0;
         justify-content: center;
     }
-    
+
 }
 
 /* Project */
@@ -354,60 +360,69 @@ header {
 
 
 
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .design-proc {
-        border: 1px solid var(--clr-dark);
-        background-color: var(--clr-dark);
-        border-radius: 8px;
-    }
+.design-proc {
+    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-dark);
+    border-radius: 8px;
+}
 
-    .role-section, .final-section {
-        background-color: var(--clr-purple);
-        color: white;
-    }
+.role-section,
+.final-section {
+    background-color: var(--clr-purple);
+    color: white;
+}
 
-    .app-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-    }
+.app-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
 
-    .app-img {
-        padding: 1rem;
-    }
-
-    @media (min-width: 600px) {
-        .manoothVid {
-            width: 30%;
-        }
-    }
-
-
-    @media (min-width: 600px) {
-        .manoothVidWeb {
-            width: 75%;
-            outline: none;
-        }
-    }
+.app-img {
+    padding: 1rem;
+}
 
 video {
     width: 100%;
     height: auto;
 }
 
+/* carousel indicators */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+/* Media Queries */
+
+
+
 @media (min-width: 600px) {
+    .manoothVidWeb {
+        width: 75%;
+        outline: none;
+    }
     .media-img {
         width: 50%;
     }
+    .manoothVid {
+        width: 30%;
+    }
 }
+
+@media (min-width:1000px) {
+    .carousel {
+        width: 60%;
+}
+
 /* Responsive for extra large screen */
 @media (min-width: 1281px) {
     section {
         padding: 2rem 24rem;
     }
 }
-
