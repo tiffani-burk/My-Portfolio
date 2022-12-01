@@ -215,6 +215,7 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .nav__link {
@@ -222,6 +223,10 @@ header {
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
+}
+
+.nav-toggle:focus {
+    outline: 3px solid var(--clr-orange);
 }
 
 .nav__link:hover {
@@ -566,5 +571,7 @@ video {
     .sketch-img {
         width: 45%;
     }
-    
+    .carousel {
+        width: 60%;
+}
 }

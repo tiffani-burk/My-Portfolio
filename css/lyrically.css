@@ -194,6 +194,7 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .nav__link {
@@ -205,6 +206,10 @@ header {
 
 .nav__link:hover {
     color: var(--clr-orange);
+}
+
+.nav-toggle:focus {
+    outline: 3px solid var(--clr-orange);
 }
 
 .nav-toggle {
