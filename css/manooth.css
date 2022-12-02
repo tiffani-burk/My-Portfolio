@@ -408,9 +408,11 @@ video {
         width: 75%;
         outline: none;
     }
+
     .media-img {
         width: 50%;
     }
+
     .manoothVid {
         width: 30%;
     }
@@ -419,6 +421,7 @@ video {
 @media (min-width:1000px) {
     .carousel {
         width: 60%;
+    }
 }
 
 /* Responsive for extra large screen */
