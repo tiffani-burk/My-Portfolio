@@ -520,6 +520,9 @@ video {
         margin-right: 0;
         justify-content: center;
     }
+    .btn {
+        padding: 1rem 2.5rem;
+    }
     
 }
 

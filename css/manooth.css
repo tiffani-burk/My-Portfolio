@@ -430,3 +430,9 @@ video {
         padding: 2rem 24rem;
     }
 }
+
+@media (max-width:600px) {
+    .btn {
+        padding: 1rem 2.5rem;
+    }
+}
