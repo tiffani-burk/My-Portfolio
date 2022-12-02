@@ -584,3 +584,37 @@ video {
         width: 60%;
 }
 }
+
+
+@media (max-width:600px) {
+
+    header {
+        color: var(--clr-light);
+        background-color: var(--clr-purple)
+    }
+
+    body {
+        background-color: var(--clr-offwhite);
+        color: var(--clr-accent);
+    }
+
+    .design-section,
+    .tool-section,
+    .comp-section,
+    .research-section,
+    .insights-section,
+    .journey-section,
+    .sketches-section,
+    .wireframe-section,
+    .lessons-section {
+        background-color: var(--clr-offwhite);
+        color: var(--clr-accent);
+    }
+
+    .process-header {
+        background-color: var(--clr-olive);
+        padding: 1.5rem;
+        width: 100%;
+        color: var(--clr-accent);
+    }
+}

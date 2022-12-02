@@ -40,6 +40,8 @@
     }
 }
 
+
+
 /* General styles */
 
 
@@ -356,7 +358,7 @@ header {
 
 .proj-header {
     width: 100%;
-    color: white;
+    color: var(--clr-light);
     padding: 2rem;
     text-align: center;
 }
@@ -412,7 +414,7 @@ section {
 .define-section2,
 .deploy-section {
     background-color: var(--clr-purple);
-    color: white;
+    color: var();
 }
 
 .img-mockup {
@@ -514,5 +516,32 @@ section {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+
+    header {
+        color: var(--clr-light);
+        background-color: var(--clr-purple)
+    }
+
+    body {
+        background-color: var(--clr-offwhite);
+        color: var(--clr-accent);
+    }
+
+    .discover-section,
+    .discover-section3,
+    .define-section2,
+    .deploy-section {
+        background-color: var(--clr-offwhite);
+        color: var(--clr-accent);
+    }
+    .process-header {
+        background-color: var(--clr-olive);
+        padding: 1.5rem;
+        width: 100%;
+        color: var(--clr-accent);
     }
 }
