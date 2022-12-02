@@ -162,7 +162,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: var(--clr-purple);
+    background-color: var(--clr-dark);
 }
 
 .logo {

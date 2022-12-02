@@ -164,7 +164,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: var(--clr-purple);
+    background-color: var(--clr-dark);
 }
 
 .logo {
@@ -394,12 +394,6 @@ section {
     align-items: center;
 }
 
-.design-proc {
-    border: 1px solid var(--clr-dark);
-    background-color: var(--clr-dark);
-    border-radius: 8px;
-}
-
 
 .research-col {
     display: flex;
@@ -430,7 +424,8 @@ section {
 
 /* carousel indicators */
 .carousel-control-next,
-.carousel-control-prev {
+.carousel-control-prev,
+.carousel-indicators {
     filter: invert(100%);
 }
 

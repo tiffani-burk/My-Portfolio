@@ -164,7 +164,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: var(--clr-purple);
+    background-color: var(--clr-dark);
 }
 
 .logo {
@@ -394,7 +394,8 @@ video {
 
 /* carousel indicators */
 .carousel-control-next,
-.carousel-control-prev {
+.carousel-control-prev,
+.carousel-indicators {
     filter: invert(100%);
 }
 

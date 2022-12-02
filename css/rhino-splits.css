@@ -182,7 +182,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: var(--clr-purple);
+    background-color: var(--clr-dark);
     color: white;
     text-align: center;
     align-items: center;
@@ -446,6 +446,12 @@ video {
     grid-row-gap: 1rem;
 }
 
+/* carousel indicators */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
 
 
 /* footer */
@@ -507,6 +513,8 @@ video {
    padding-top: 2rem;
 }
 
+/* Media Queries */
+
 @media (max-width:800px) {
     .footer .copyright {
         margin-right: 0;
@@ -515,8 +523,6 @@ video {
     
 }
 
-
-/* Media Queries */
 
 /* Responsive for extra large screen */
 @media (min-width: 1281px) {
