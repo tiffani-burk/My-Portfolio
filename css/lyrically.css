@@ -517,6 +517,16 @@ section {
         flex-direction: row;
         align-items: center;
     }
+
+    .role-container,
+    .overview,
+    .problem,
+    .research-col {
+        background-color: var(--clr-offwhite);
+        color: var(--clr-accent);
+        padding: 2rem;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width:600px) {
@@ -538,6 +548,7 @@ section {
         background-color: var(--clr-offwhite);
         color: var(--clr-accent);
     }
+
     .process-header {
         background-color: var(--clr-olive);
         padding: 1.5rem;
@@ -545,4 +556,3 @@ section {
         color: var(--clr-accent);
     }
 }
-
