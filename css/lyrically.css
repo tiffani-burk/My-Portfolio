@@ -414,7 +414,7 @@ section {
 .define-section2,
 .deploy-section {
     background-color: var(--clr-purple);
-    color: var();
+    color: var(--clr-light);
 }
 
 .img-mockup {
@@ -545,3 +545,4 @@ section {
         color: var(--clr-accent);
     }
 }
+
