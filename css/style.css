@@ -553,8 +553,12 @@ header {
         margin-right: 0;
         justify-content: center;
     }
+    .item-text {
+        background-color: rgba(0, 0, 0, 0.8);
+        visibility: visible;
+        padding: .5rem;
+    }
     
-}
 
 /*  animation */
 @keyframes hand {
