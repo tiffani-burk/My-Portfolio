@@ -554,10 +554,14 @@ header {
         justify-content: center;
     }
     .item-text {
-        background-color: rgba(0, 0, 0, 0.8);
+        /* background-color: rgba(0, 0, 0, 0.8); */
         visibility: visible;
-        padding: .5rem;
+        /* padding: .5rem; */
     }
+    .portfolio__img {
+   filter: brightness(40%);
+    }
+}
     
 
 /*  animation */
