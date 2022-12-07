@@ -554,12 +554,15 @@ header {
         justify-content: center;
     }
     .item-text {
-        /* background-color: rgba(0, 0, 0, 0.8); */
         visibility: visible;
-        /* padding: .5rem; */
     }
     .portfolio__img {
-   filter: brightness(40%);
+   filter: brightness(50%);
+    }
+    .portfolio__item:hover, .portfolio__img {
+        transition: none;
+        transform: none;
+        opacity: none;
     }
 }
     
