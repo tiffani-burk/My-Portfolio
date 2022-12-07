@@ -488,6 +488,10 @@ header {
     font-weight: 600;
 }
 
+.viewBtn {
+    visibility: hidden;
+}
+
 
 /* footer */
 
@@ -563,6 +567,37 @@ header {
         transition: none;
         transform: none;
         opacity: none;
+    }
+    .viewBtn {
+        color: var(--clr-light);
+        visibility: visible;
+        text-decoration: underline;
+    }
+    .item-text h3, .project-description {
+        text-transform: uppercase;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .item-text {
+        visibility: visible;
+    }
+    .portfolio__img {
+   filter: brightness(50%);
+    }
+    .portfolio__item:hover, .portfolio__img {
+        transition: none;
+        transform: none;
+        opacity: none;
+    }
+    .viewBtn {
+        color: var(--clr-light);
+        visibility: visible;
+        text-decoration: underline;
+    }
+    .item-text h3, .project-description {
+        text-transform: uppercase;
     }
 }
     
