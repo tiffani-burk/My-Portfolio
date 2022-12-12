@@ -1,0 +1,12 @@
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    color:blue;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+

@@ -23,6 +23,7 @@
 
   <!-- Style sheet -->
   <link href="css/rhino-splits.css" rel="stylesheet">
+  <link href="css/readMoreBtn.css" rel="stylesheet">
 
 
 </head>
@@ -63,16 +64,17 @@
         <h2>Overview</h2>
         <p> Rhino Splits is a fictitious
           peer-to-peer money transfer app, where real data was collected, research was conducted and real people were
-          interviewed.
-        </p>
-        <p>
-          While at Nashville Software School, I was tasked with creating a mobile app that would make it easy for
-          young adults to do peer-to-peer financial transfers.
-          Below I have detailed my design process and included a clickable prototype.
+          interviewed.<span id="dots">..</span>
+          <span id="more">
+            While at Nashville Software School, I was tasked with creating a mobile app that would make it easy for
+            young adults to do peer-to-peer financial transfers.
+            Below I have detailed my design process and included a clickable prototype.
+          </span> <a onclick="readMore()" id="myBtn">Read More</a>
         </p>
       </h2>
       <div class="btn-section">
-        <a href="https://www.figma.com/proto/ZMuA8hybpuXbB9AWSoEygZ/Rhino-Splits-2?node-id=50%3A1017&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=50%3A1017&show-proto-sidebar=1">
+        <a
+          href="https://www.figma.com/proto/ZMuA8hybpuXbB9AWSoEygZ/Rhino-Splits-2?node-id=50%3A1017&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=50%3A1017&show-proto-sidebar=1">
           <button class="btn"> <b>View Prototype</b> </button>
         </a>
       </div>
@@ -541,6 +543,7 @@
 
   <!-- JS link -->
   <script src="js/index.js"></script>
+  <script src="js/readMore.js"></script>
 
 
 </body>

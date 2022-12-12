@@ -28,6 +28,8 @@
 
     <!-- CSS link -->
     <link rel="stylesheet" href="css/manooth.css">
+    <link rel="stylesheet" href="css/readMoreBtn.css">
+
 
 </head>
 
@@ -57,8 +59,12 @@
 
     <section>
         <h2>Overview</h2>
-        <p>Manooth Furniture is a brand new business, selling affordable, high-end furniture, made in Ireland. This was
-            a project for my Adobe XD class, led by Adobe-certified instructor, Daniel Scott.
+        <p>Manooth Furniture is a responsive mobile and web application for an e-commerce store.<span
+                id="dots">..</span>
+            <span id="more">Manooth Furniture is a fictional business, selling affordable, high-end furniture, made in
+                Ireland. This was
+                a project for my Adobe XD class, led by Adobe-certified instructor, Daniel Scott.</span> <a
+                onclick="readMore()" id="myBtn">Read More</a>
         </p>
 
 
@@ -199,6 +205,8 @@
 
     <!-- JS Nav Link -->
     <script src="js/index.js"></script>
+    <script src="js/readMore.js"></script>
+
 
     <!-- JS Link for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

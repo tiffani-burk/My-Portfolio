@@ -29,6 +29,7 @@
 
     <!-- CSS link -->
     <link rel="stylesheet" href="css/cake.css">
+    <link rel="stylesheet" href="css/readMoreBtn.css">
 
 </head>
 
@@ -62,9 +63,11 @@
 
         <section class="overview">
             <h2>Overview</h2>
-            <p>The owner of a local bakery wanted me to create an app for her store. The goal was to make it more
-                convenient and
-                easier for her customers to create orders.</p>
+            <p> Cake My Day is a responsive mobile application for an e-commerce store.<span id="dots">..</span><span
+                    id="more"> While this applicaiton never made it to production, it was designed for a real client.
+                    The goal of this application was to make it easy and convenient for this local baker to receive and
+                    confirm orders. </span> <a onclick="readMore()" id="myBtn">Read More</a>
+            </p>
             <br>
             <h2>My Role</h2>
             <p>As the sole designer on this application, I handled the research, the UI, the logo design and the
@@ -211,6 +214,8 @@
 
     <!-- JS Link for Nav -->
     <script src="js/index.js"></script>
+    <script src="js/readMore.js"></script>
+
 
     <!-- JS Link for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -30,6 +30,8 @@
 
     <!-- Link Style Sheet -->
     <link rel="stylesheet" href="css/lyrically.css">
+    <link rel="stylesheet" href="css/readMoreBtn.css">
+
 </head>
 
 <body>
@@ -63,15 +65,22 @@
     <section class="intro-section">
         <div class="overview">
             <h2>Overview</h2>
-            <p>Lyrically was my frontend development capstone project at Nashville Software School. The objective of
-                this
-                was to build a functioning app in React.js that allows the user to create, read and destroy. I also
-                took
-                the
-                initiative collect data and conduct user interviews to create a case study before developing this
-                application. Below, I have detailed my design process and included video a walkthrough of my
-                developed
-                application.</p>
+            <p>Lyrically is a dynamic mobile application that allows the user to create, edit and delete musical
+                setlists.<span id="dots">..</span>
+                <span id="more">
+                    This was my frontend development capstone project at Nashville Software School. The objective of
+                    this
+                    was to build a functioning app in React.js that allows the user to create, read and destroy. I also
+                    took
+                    the
+                    initiative collect data and conduct user interviews to create a case study before developing this
+                    application. Below, I have detailed my design process and included video a walkthrough of the
+                    developed
+                    application. </span><a onclick="readMore()" id="myBtn">Read more</a>
+
+            </p>
+
+
             <br>
 
             <h2>What need does this fill?</h2>
@@ -123,11 +132,11 @@
         </div>
 
         <div class="problem">
-        <h2>Problem Statement</h2>
-        <p>To provide a way for musicians to store their music for both covers and original songs in one place,
-            while
-            being
-            able to easily arrange and change setlists. </p>
+            <h2>Problem Statement</h2>
+            <p>To provide a way for musicians to store their music for both covers and original songs in one place,
+                while
+                being
+                able to easily arrange and change setlists. </p>
         </div>
 
         <br>
@@ -356,6 +365,8 @@
 
     <!-- JS script -->
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/readMore.js"></script>
+
 
 
     <!-- JS Link for Bootstrap -->
