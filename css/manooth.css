@@ -392,6 +392,10 @@ video {
     height: auto;
 }
 
+video:focus {
+    outline: none;
+}
+
 /* carousel indicators */
 .carousel-control-next,
 .carousel-control-prev,

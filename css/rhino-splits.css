@@ -437,6 +437,10 @@ video {
     height: auto;
 }
 
+video:focus {
+    outline: none;
+}
+
 
 
 .img-mockups {

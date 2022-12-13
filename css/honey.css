@@ -382,6 +382,10 @@ video {
     width: 100%;
 }
 
+video:focus {
+    outline: none;
+}
+
 @media (min-width: 600px) {
     img, video {
         width: 70%;
