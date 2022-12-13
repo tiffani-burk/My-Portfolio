@@ -393,6 +393,10 @@ video {
     height: auto;
 }
 
+video:focus {
+    outline: none;
+}
+
 .research-section,
 .persona-section,
 .test-section {
