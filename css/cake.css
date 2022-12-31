@@ -156,10 +156,9 @@ h3 {
     color: #fc0;
 }
 
-/* header */
-
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1em;
     background-color: var(--clr-dark);
@@ -168,6 +167,11 @@ header {
 .logo {
     max-width: 100px;
 }
+
+.logo:focus {
+outline: none;
+}
+
 
 .nav {
     position: fixed;

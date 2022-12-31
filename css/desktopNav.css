@@ -1,0 +1,187 @@
+/* Note: Testing this nav. Not in use */
+
+/* Custom Properties */
+
+:root {
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Fira Code', monospace;
+
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    --clr-olive: #9bc1bc;
+    --clr-purple: #5d576b;
+    --clr-offwhite: #e6ebe0;
+    --clr-orange: #ed6a5a;
+    --clr-yellow: #f4f1bb;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-nav: 1.75rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-nav: 2.5rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+:root {
+  --sidebar-width: 20rem;
+  --toggler-size: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-family:'Open Sans', sans-serif;
+} */
+
+
+.sidebar {
+  width: var(--sidebar-width);
+  height: 500px;
+  transform: translateX(calc(var(--sidebar-width) * -1));
+  background: linear-gradient(to bottom right, rgb(38, 36, 36), rgb(156, 154, 148));
+  background-size: 400% 400%;
+  background-position: 90% 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: .5;
+  transition: transform .6s, background-position 1s .6s;
+}
+
+.desktopNav-container {
+    z-index: 2;
+}
+
+.input-toggler:checked ~ .sidebar {
+  opacity: .9;
+  transform: translateX(0);
+  background-position: 0 0;
+}
+
+.content, .content div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content div[id] {
+  display: none;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu__link {
+  color: var(--clr-light);
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  color: var(--clr-orange);
+}
+
+.menu-toggler {
+  display: block;
+  width: var(--toggler-size);
+  height: var(--toggler-size);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 1;
+  margin: 1rem;
+}
+
+
+
+.menu-toggler__line {
+  height: calc(var(--toggler-size) / 5);
+  background: var(--clr-orange);
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition-property: transform, opacity;
+  transition-duration: .5s, .25s;
+  transition-delay: 0s, .5s;
+  animation-name: slidein;
+  animation-duration: .5s;
+  animation-iteration-count:1;
+  animation-timing-function: ease-out;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line {
+  transition-delay: .25s, 0s;
+}
+
+
+.menu-toggler__line:nth-child(2) {
+  top: calc(var(--toggler-size) / 5 * 2);
+animation-duration: .6s;
+}
+
+.menu-toggler__line:nth-child(3) {
+  top: calc(var(--toggler-size) / 5 * 4);
+    animation-duration:.7s;
+}
+
+.input-toggler {
+  display: none;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line {
+  background: Wheat;
+  z-index: -1;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(1) {
+  transform: translateY(calc(var(--toggler-size) / 5 * 2)) rotate(45deg);
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(2) {
+  opacity: 0;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(3) {
+  transform: translateY(calc(var(--toggler-size) / 5 * -2)) rotate(-45deg);
+}
+
+
+@keyframes slidein {
+  from {left: -200%; right:200%;}
+  to {left: 0; right: 0;}
+}
+
+
+

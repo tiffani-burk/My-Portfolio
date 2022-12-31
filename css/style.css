@@ -181,23 +181,15 @@ header {
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-/* making nav smaller for desktop */
-/* 
-@media (min-width: 1000px) {
-    .nav {
-        background-color: hsla(0, 0%, 3%, 0.565);
-        box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.75);
-        height: 100%;
-        width: 50%;
-        position: fixed;
-        right: -50%;
-        top: 0;
-        transform: translate3d(-50%, 0, 0);
-        animation-timing-function: 1s ease-in;
-        
+
+/* hiding mobile nav  */
+/* @media (min-width: 1000px) {
+    .nav-toggle {
+      visibility: hidden;
       }
- 
 } */
+
+
 
 .nav__list {
     list-style: none;
@@ -321,7 +313,7 @@ header {
         grid-area: img;
         min-width: 250px;
         position: relative;
-        z-index: 2;
+        z-index: -1;
     }
 
     .section__subtitle--intro {
@@ -332,6 +324,7 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        z-index: -1;
     }
 }
 
@@ -597,6 +590,9 @@ header {
     .item-text h3, .project-description {
         text-transform: uppercase;
     }
+    .desktopNav-container {
+        visibility: hidden;
+    }
     
 }
 
@@ -619,6 +615,9 @@ header {
     }
     .item-text h3, .project-description {
         text-transform: uppercase;
+    }
+    .desktopNav-container {
+        visibility: hidden;
     }
 }
     

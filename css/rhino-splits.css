@@ -180,17 +180,20 @@ h3 {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1em;
     background-color: var(--clr-dark);
-    color: white;
-    text-align: center;
-    align-items: center;
 }
 
 .logo {
     max-width: 100px;
 }
+
+.logo:focus {
+outline: none;
+}
+
 
 .nav {
     position: fixed;
