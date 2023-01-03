@@ -83,8 +83,8 @@ strong {
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--clr-orange);
+    padding: 1.5em 3.5em;
+    background: #ffce42;
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -161,10 +161,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-}
-
-.logo {
-    max-width: 100px;
 }
 
 .nav {

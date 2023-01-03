@@ -171,7 +171,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 10rem;
 }
 
 .logo:focus {
