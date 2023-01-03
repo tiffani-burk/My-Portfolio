@@ -426,6 +426,9 @@ video:focus {
     .manoothVid {
         width: 30%;
     }
+    .logo {
+        max-width: 10em;
+    }
 }
 
 @media (min-width:1000px) {

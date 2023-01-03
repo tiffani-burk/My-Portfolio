@@ -394,6 +394,9 @@ video:focus {
     img, video {
         width: 70%;
     }
+    .logo {
+        max-width: 10em;
+    }
 }
 
 /* Responsive for extra large screen */

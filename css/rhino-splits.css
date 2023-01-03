@@ -633,3 +633,9 @@ video:focus {
         color: var(--clr-accent);
     }
 }
+
+@media (min-width: 600px) {
+    .logo {
+        max-width: 10em;
+    }
+}

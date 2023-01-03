@@ -168,6 +168,9 @@ header {
     max-width: 100px;
 }
 
+
+
+
 .logo:focus {
 outline: none;
 }
@@ -436,6 +439,10 @@ video:focus {
     .cakeVid {
         width: 25%;
     }
+    .logo {
+        max-width: 10em;
+    }
+    
 }
 
 
