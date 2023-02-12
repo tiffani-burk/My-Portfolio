@@ -16,9 +16,9 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #000000;
-    --clr-olive: #9bc1bc;
-    --clr-purple: #5d576b;
-    --clr-offwhite: #e6ebe0;
+    --clr-olive: #f6f6f6;
+    --clr-purple: #f6f6f6;
+    --clr-offwhite: #fff;
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
@@ -51,7 +51,7 @@ html {
 
 body {
     background: var(--clr-olive);
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -250,11 +250,6 @@ outline: none;
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -418,8 +413,8 @@ section {
 .discover-section3,
 .define-section2,
 .deploy-section {
-    background-color: var(--clr-purple);
-    color: var(--clr-light);
+    background-color: var(--clr-olive);
+    color: var(--clr-accent);
 }
 
 .img-mockup {
@@ -454,13 +449,7 @@ video:focus {
     }
 }
 
-@media (min-width: 1000px) {
 
-    .mockup1-img,
-    .deploy-img {
-        width: 45%;
-    }
-}
 
 /* Responsive for tablet */
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -538,6 +527,14 @@ video:focus {
         color: var(--clr-accent);
         padding: 2rem;
         border-radius: 10px;
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
+    .mockup1-img,
+    .deploy-img {
+        width: 45%;
     }
 }
 
