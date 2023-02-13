@@ -76,6 +76,11 @@ strong {
     outline-offset: 3px;
 }
 
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--clr-dark);
+}
+
 /* Buttons */
 
 
@@ -126,11 +131,11 @@ h3 {
 }
 
 .process-header {
-    background: var(--clr-accent);
+    
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-yellow);
+    color: #5d576b;
     text-align: center;
 }
 
