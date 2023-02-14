@@ -22,6 +22,20 @@
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
+
+    /* --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #000000;
+    --clr-olive: #f6f6f6;
+    --clr-purple: #f6f6f6;
+    --clr-offwhite: #fff;
+    --clr-orange: #ed6a5a;
+    --clr-yellow: #f4f1bb; */
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -50,8 +64,8 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
-    color: var(--clr-dark);
+    background: var(--clr--background);
+    color: var(--clr-accent);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -74,6 +88,11 @@ strong {
 :focus {
     outline: 3px solid var(--clr-orange);
     outline-offset: 3px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--clr-dark);
 }
 
 /* Buttons */
@@ -126,11 +145,11 @@ h3 {
 }
 
 .process-header {
-    background: var(--clr-accent);
+    
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-yellow);
+    color: #5d576b;
     text-align: center;
 }
 
@@ -250,11 +269,6 @@ outline: none;
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -368,27 +382,6 @@ outline: none;
     text-align: center;
 }
 
-
-
-
-/* .role-container {
-    display: flex;
-    flex-direction: column;
-    background-color: powderblue;
-    width: 100%;
-} */
-
-
-/* @media (min-width: 600px) {
-    .intro2-section {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content; */
-
 .mockup1-img,
 .deploy-img {
     width: 100%;
@@ -401,7 +394,6 @@ section {
     align-items: center;
 }
 
-
 .research-col {
     display: flex;
     flex-direction: column;
@@ -412,14 +404,6 @@ section {
 .interview-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.discover-section,
-.discover-section3,
-.define-section2,
-.deploy-section {
-    background-color: var(--clr-purple);
-    color: var(--clr-light);
 }
 
 .img-mockup {
@@ -454,13 +438,7 @@ video:focus {
     }
 }
 
-@media (min-width: 1000px) {
 
-    .mockup1-img,
-    .deploy-img {
-        width: 45%;
-    }
-}
 
 /* Responsive for tablet */
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -530,15 +508,53 @@ video:focus {
         align-items: center;
     }
 
-    .role-container,
-    .overview,
-    .problem,
-    .research-col {
-        background-color: var(--clr-offwhite);
+  
+    .overview {
+        background-color: var(--clr--white);
         color: var(--clr-accent);
         padding: 2rem;
         border-radius: 10px;
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
     }
+    .research-col{
+       border: #9bc1bc 4px solid;
+       border-radius: 8px;
+       padding: 2rem;
+       display: flex;
+       align-items: center;
+    }
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
+    .mockup1-img,
+    .deploy-img {
+        width: 45%;
+    }
+    /* typewriter animation */
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 }
 
 @media (max-width:600px) {
@@ -568,3 +584,4 @@ video:focus {
         color: var(--clr-accent);
     }
 }
+

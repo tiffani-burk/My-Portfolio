@@ -19,6 +19,11 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -59,7 +64,7 @@
                 <strong>Lyrically</strong>
             </h1>
             <h4>Web Application</h4>
-            <p class="section__subtitle section__subtitle--intro">UX / UI / Front-End</p>
+            <p class="section__subtitle section__subtitle--intro typewriter">UX / UI / Front-End</p>
         </div>
 
 
@@ -73,16 +78,15 @@
     <section class="intro-section">
         <div class="overview">
             <h2>Overview</h2>
-            <p>Lyrically is a dynamic mobile application that allows the user to create, edit and delete musical
+            <p>Lyrically is a dynamic mobile application that allows the user to create, save, edit and delete musical
                 setlists.<span id="dots">..</span>
                 <span id="more">
-                    This was my frontend development capstone project at Nashville Software School. The objective of
-                    this
-                    was to build a functioning app in React.js that allows the user to create, read and destroy. I also
-                    took
-                    the
-                    initiative collect data and conduct user interviews to create a case study before developing this
-                    application. Below, I have detailed my design process and included video a walkthrough of the
+                    This was my frontend development capstone project at Nashville Software School. The objective was to
+                    build a functioning application in React.js that demonstrates the operations of CRUD (create, read,
+                    update, delete). I
+                    took the initiative to collect data and conduct user interviews to create a case study before
+                    developing this
+                    application. Below, I have detailed my design process and included a video walkthrough of the
                     developed
                     application. </span><a onclick="readMore()" id="myBtn">Read more</a>
 
@@ -112,6 +116,7 @@
                 <h2>My Role</h2>
                 <p class="role-p">I am the creator, designer and developer of this app.
                 </p>
+                <br>
                 <h2>Solution</h2>
                 <p>To create an app that bridges the gab between digital setlists aimed at songwriters and those
                     marketed to
@@ -120,16 +125,15 @@
             </div>
         </div>
     </section>
+    <section>
+        <img src="img/Lyrically/mockup-lyrically.png" alt="">
+    </section>
 
     <section>
-        <h2>Tools and Process</h2>
-        <img class="design-proc" src="img/Lyrically/Design Tools.png" />
-
-        <br>
-
-
+        <h2>Design Process</h2>
         <img class="design-proc" src="img/design-process.png" />
-        <figcaption>Design Process</figcaption>
+        <br>
+        <img class="design-proc img-shadow" src="img/Lyrically/Design Tools.png" />
     </section>
 
 
@@ -151,35 +155,35 @@
 
         <h2>Research Plan</h2>
         <div class="research-grid">
-            <div class="research-col">
-                <h3>Activities and Interactions</h3>
+            <div class="research-col img-shadow">
+                <h4><b>Activities and Interactions</b></h4>
                 <ul>
                     <li>Live Gigs</li>
                     <li>Band Rehearsals</li>
                     <li>Solo music practice</li>
                 </ul>
             </div>
-            <div class="research-col">
-                <h3>Environments</h3>
-                <ul>
-                    <li>Bars</li>
-                    <li>Coffee Shops</li>
-                    <li>Apartment or House</li>
-                    <li>Music studio</li>
-                    <li>Restaurants</li>
-                    <li>Music Venue</li>
-                </ul>
+            <div class="research-col img-shadow">
+                <h4><b>Environments</b></h3>
+                    <ul>
+                        <li>Bars</li>
+                        <li>Coffee Shops</li>
+                        <li>Apartment or House</li>
+                        <li>Music studio</li>
+                        <li>Restaurants</li>
+                        <li>Music Venue</li>
+                    </ul>
             </div>
-            <div class="research-col">
-                <h3>Target Users</h3>
+            <div class="research-col img-shadow">
+                <h4><b>Target Users</b></h4>
                 <ul>
                     <li>Musicians</li>
                     <li>Singers</li>
                     <li>Songwriters</li>
                 </ul>
             </div>
-            <div class="research-col">
-                <h3>Competitors</h3>
+            <div class="research-col img-shadow">
+                <h4><b>Competitors</b></h4>
                 <ul>
                     <li>OnSong</li>
                     <li>Ultimate Guitar</li>
@@ -188,18 +192,18 @@
                 </ul>
             </div>
         </div>
-
     </section>
 
 
     <section class="discover-section2">
         <h2>Competitive Analysis</h2>
 
-        <img src="img/Lyrically/Ultimate-Guitar.jpeg" />
+        <img class="img-shadow" src="img/Lyrically/Ultimate-Guitar.jpeg" />
         <br>
-        <img src="img/Lyrically/Onsong.jpeg" />
+        <img class="img-shadow" src="img/Lyrically/Onsong.jpeg" />
+    </section>
 
-
+    <section>
         <h2>User Interviews</h2>
         <p>Let's meet the users</p>
         <div class="interview-container">
@@ -207,6 +211,7 @@
             <img src="img/Lyrically/user1.png" />
         </div>
     </section>
+
 
     <section class="discover-section3">
         <h2>Research Synthesis</h2>
@@ -230,12 +235,12 @@
 
 
         <h2>User Persona</h2>
-        <img class="user-img" src="img/Lyrically/user persona.jpeg" />
+        <img class="user-img img-shadow" src="img/Lyrically/user persona.jpeg" />
 
-        <br>
-
+    </section>
+    <section>
         <h2>Journey Mapping</h2>
-        <img class="journey-img" src="img/Lyrically/journey-map.jpeg" />
+        <img class="journey-img img-shadow" src="img/Lyrically/journey-map.jpeg" />
     </section>
 
     <section class="define-section2">
@@ -246,9 +251,10 @@
             The
             other constraint was time. Due to the limited time constraint, I was not able to do usability testing.
         </p>
-
+    </section>
+    <section>
         <h2>Site Map</h2>
-        <img class="site-img" src="img/Lyrically/site-map.webp" />
+        <img class="site-img img-shadow" src="img/Lyrically/site-map.webp" />
     </section>
 
     <section class="design-section">
@@ -258,8 +264,10 @@
         </div>
 
         <h2>Wireframes</h2>
-        <img class="wireframe-img" src="img/Lyrically/wireframe.png" />
+        <img class="wireframe-img img-shadow" src="img/Lyrically/wireframe.png" />
+    </section>
 
+    <section>
         <h2>Style Guide</h2>
         <img class="style-img" src="img/Lyrically/style-guide.png" />
         <p>After studying some of the brands that the users relate to, I noticed that several had black in them.
@@ -281,17 +289,17 @@
 
     <section class="deploy-section2">
         <h4>Video walkthrough of Lyrically</h4>
-        <video class="vid1" width="100%" height="auto" controls>
+        <video class="vid1 img-shadow" width="100%" height="auto" controls>
             <source src="img/Lyrically/Lyrically-waltkhough1.mp4">
         </video>
         <br>
-        <video class="vid2" width="100%" height="auto" controls src="img/lyrically/Lyrically-walkthrough2.mp4"></video>
+        <video class="vid2 img-shadow" width="100%" height="auto" controls src="img/lyrically/Lyrically-walkthrough2.mp4"></video>
         <br>
 
 
         <h4>Photos of Developed Application</h4>
         <!-- image carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide img-shadow" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -337,8 +345,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
     </section>
 
 

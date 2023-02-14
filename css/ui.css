@@ -22,6 +22,10 @@
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -48,7 +52,7 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
+    background: var(--clr--background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -72,6 +76,11 @@ strong {
 :focus {
     outline: 3px solid var(--clr-orange);
     outline-offset: 3px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--clr-dark);
 }
 
 /* Buttons */
@@ -350,6 +359,7 @@ outline: none;
         margin-right: 0;
         justify-content: center;
     }
+  
     
 }
 
@@ -390,11 +400,6 @@ outline: none;
         text-align: center;
     }
 
-    @media (min-width: 600px) {
-        .logo-img {
-            width: 50%;
-        }
-    }
 
     /* Responsive for extra large screen */
 @media (min-width: 1281px) {
@@ -430,4 +435,39 @@ outline: none;
     .logo {
         max-width: 10em;
     }
+    .logo-img {
+        width: 50%;
+    }
 }
+
+@media (min-width: 1000px) {
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
+    /* typewriter animation */
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+} 
+

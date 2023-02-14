@@ -22,6 +22,10 @@
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -48,7 +52,7 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
+    background: var(--clr--background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -91,6 +95,11 @@ strong {
     color: white;
     padding: 2rem;
     text-align: center;
+}
+
+h2 .header-font {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--clr-dark);
 }
 
 /* Buttons */
@@ -142,11 +151,10 @@ h3 {
 }
 
 .process-header {
-    background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-yellow);
+    color: var(--clr-purple);
     text-align: center;
 }
 
@@ -204,7 +212,6 @@ outline: none;
     left: 0;
     right: 0;
     z-index: 100;
-
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -307,20 +314,6 @@ outline: none;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.design-section,
-.tool-section,
-.comp-section,
-.research-section,
-.insights-section,
-.journey-section,
-.sketches-section,
-.wireframe-section,
-.lessons-section
-{
-    background-color: var(--clr-purple);
-    color: #fff;
-}
-
 
 .btn-section {
     text-align: center;
@@ -333,7 +326,7 @@ outline: none;
 }
 
 .designTools-section {
-    background-color: var(--clr-offwhite);
+    background-color: var(--clr--white);
     color: #000000;
     padding: 2rem;
     border-radius: 10px;
@@ -341,16 +334,12 @@ outline: none;
 }
 
 
-.research-div {
-    background-color: var(--clr-offwhite);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 
 .research-item {
-    border: solid black 2px;
+    border: solid var(--clr-olive) 4px;
+    border-radius: 10px;
     padding: 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -562,6 +551,10 @@ video:focus {
 
 /* Query for laptop and monitor */
 @media (min-width:1000px) {
+    .research-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .videoForRhino {
         width: 80%;
         height: auto;
@@ -592,12 +585,41 @@ video:focus {
 }
 .interviews,
 .div-left,
-.goal-right {
-        background-color: var(--clr-offwhite);
-        color: var(--clr-accent);
+.goal-right,
+.intro-right {
+        background-color: var(--clr--white);
+        color: var(--clr--black);
         padding: 2rem;
         border-radius: 10px;
 }
+.img-shadow {
+    box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+}
+/* typewriter animation */
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 }
 
 
@@ -638,4 +660,7 @@ video:focus {
     .logo {
         max-width: 10em;
     }
+   
 }
+
+
