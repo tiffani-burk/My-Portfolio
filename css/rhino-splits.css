@@ -97,7 +97,7 @@ strong {
     text-align: center;
 }
 
-h2 {
+h2 .header-font {
     font-family: 'Libre Baskerville', serif;
     color: var(--clr-dark);
 }
