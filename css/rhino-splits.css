@@ -151,11 +151,10 @@ h3 {
 }
 
 .process-header {
-    background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color: var(--clr-yellow);
+    color: var(--clr-purple);
     text-align: center;
 }
 
@@ -587,9 +586,10 @@ video:focus {
 }
 .interviews,
 .div-left,
-.goal-right {
-        background-color: var(--clr-offwhite);
-        color: var(--clr-accent);
+.goal-right,
+.intro-right {
+        background-color: var(--clr--white);
+        color: var(--clr--black);
         padding: 2rem;
         border-radius: 10px;
 }

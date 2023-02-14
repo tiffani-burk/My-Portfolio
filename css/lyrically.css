@@ -16,11 +16,25 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #000000;
+    --clr-olive: #9bc1bc;
+    --clr-purple: #5d576b;
+    --clr-offwhite: #e6ebe0;
+    --clr-orange: #ed6a5a;
+    --clr-yellow: #f4f1bb;
+
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
+
+    /* --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #000000;
     --clr-olive: #f6f6f6;
     --clr-purple: #f6f6f6;
     --clr-offwhite: #fff;
     --clr-orange: #ed6a5a;
-    --clr-yellow: #f4f1bb;
+    --clr-yellow: #f4f1bb; */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -50,7 +64,7 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
+    background: var(--clr--background);
     color: var(--clr-accent);
     margin: 0;
     font-family: var(--ff-primary);
@@ -392,14 +406,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.discover-section,
-.discover-section3,
-.define-section2,
-.deploy-section {
-    background-color: var(--clr-olive);
-    color: var(--clr-accent);
-}
-
 .img-mockup {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -504,7 +510,7 @@ video:focus {
 
   
     .overview {
-        background-color: var(--clr-offwhite);
+        background-color: var(--clr--white);
         color: var(--clr-accent);
         padding: 2rem;
         border-radius: 10px;
