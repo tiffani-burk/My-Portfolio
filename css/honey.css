@@ -446,10 +446,7 @@ video:focus {
     .img-shadow {
         box-shadow: rgb(204, 203, 203) 6px 6px 20px;
     }
-}
-
-
-/* typewriter animation */
+    /* typewriter animation */
 .typewriter {
     color: #fff;
     font-family: monospace;
@@ -474,3 +471,6 @@ video:focus {
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
+}
+
+

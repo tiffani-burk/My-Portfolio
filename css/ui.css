@@ -444,9 +444,7 @@ outline: none;
     .img-shadow {
         box-shadow: rgb(204, 203, 203) 6px 6px 20px;
     }
-} 
-
-/* typewriter animation */
+    /* typewriter animation */
 .typewriter {
     color: #fff;
     font-family: monospace;
@@ -471,3 +469,5 @@ outline: none;
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
+} 
+
