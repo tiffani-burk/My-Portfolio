@@ -365,7 +365,6 @@ outline: none;
         margin-right: 0;
         justify-content: center;
     }
-    
 }
 
 /* Project */
@@ -440,5 +439,11 @@ video:focus {
         padding: 1.5rem;
         width: 100%;
         color: var(--clr-accent);
+    }
+}
+
+@media (min-width:1000px) {
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
     }
 }

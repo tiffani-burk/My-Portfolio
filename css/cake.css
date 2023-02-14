@@ -426,6 +426,9 @@ video:focus {
     .carousel {
         width: 60%;
     }
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
 }
 
 @media (min-width: 600px) {

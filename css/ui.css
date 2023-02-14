@@ -359,6 +359,7 @@ outline: none;
         margin-right: 0;
         justify-content: center;
     }
+  
     
 }
 
@@ -399,11 +400,6 @@ outline: none;
         text-align: center;
     }
 
-    @media (min-width: 600px) {
-        .logo-img {
-            width: 50%;
-        }
-    }
 
     /* Responsive for extra large screen */
 @media (min-width: 1281px) {
@@ -439,4 +435,13 @@ outline: none;
     .logo {
         max-width: 10em;
     }
+    .logo-img {
+        width: 50%;
+    }
 }
+
+@media (min-width: 1000px) {
+    .img-shadow {
+        box-shadow: rgb(204, 203, 203) 6px 6px 20px;
+    }
+} 
