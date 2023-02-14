@@ -22,6 +22,10 @@
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -48,7 +52,7 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
+    background: var(--clr--background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);

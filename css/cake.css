@@ -22,6 +22,10 @@
     --clr-orange: #ed6a5a;
     --clr-yellow: #f4f1bb;
 
+    --clr--white: #fff;
+    --clr--background: #f6f6f6;
+    --clr--black: #000000;
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -48,7 +52,7 @@ html {
 }
 
 body {
-    background: var(--clr-olive);
+    background: var(--clr--background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -248,11 +252,6 @@ outline: none;
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -267,7 +266,6 @@ outline: none;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -284,9 +282,6 @@ outline: none;
 .hamburger::after {
     bottom: 6px;
 }
-
-
-
 
 
 /* footer */
@@ -402,13 +397,6 @@ video {
 
 video:focus {
     outline: none;
-}
-
-.research-section,
-.persona-section,
-.test-section {
-    background-color: var(--clr-purple);
-    color: white;
 }
 
 /* carousel indicators */
