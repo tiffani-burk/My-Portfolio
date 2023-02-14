@@ -81,6 +81,11 @@ strong {
     outline-offset: 3px;
 }
 
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--clr-dark);
+}
+
 /* Buttons */
 
 .btn {
