@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Overview
-I created this personal website to showcase some of my favorite web design and development projects. This is a static website. 
+I created this personal website to showcase some of my favorite web design and development projects. 
 
 ## Tech Stack
 HTML <br>
